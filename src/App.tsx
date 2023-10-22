@@ -1,4 +1,3 @@
-// https://w5x5neakxd.execute-api.us-east-1.amazonaws.com/dev
 import { FormEvent } from "react";
 import Register from "./Components/Register";
 
@@ -22,6 +21,7 @@ export default function App() {
     const target = e.currentTarget.elements;
 
     const data = {
+      id: `${Math.floor(Math.random() * 100)}`,
       firstName: target.firstName.value,
       lastName: target.lastName.value,
       email: target.email.value,
